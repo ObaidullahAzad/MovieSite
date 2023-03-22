@@ -2,7 +2,7 @@ body{
     margin: 0px;
     padding: 0px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(193, 192, 192);
+    background-color: rgb(197, 243, 248);
 }
 *{
     box-sizing: border-box;
@@ -45,7 +45,7 @@ nav .menu li a{
 .searchbar{
     width: 250px;
     height: 40px;
-    background-color: rgb(210, 211, 212);
+    background-color: rgb(247, 226, 246);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,12 +61,16 @@ nav .menu li a{
     height: 30px;
     border: none;
     outline: none;
-    background-color: rgb(210, 211, 212)
+    background-color: rgb(247, 226, 246)
 }
 .searchbar i{
     color: #3a3a3a;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+}
+.searchbtn{
+    font-size:larger ;
+    font-weight: 700;
 }
 nav .menu li a:hover{
     background-color: #242424;
@@ -78,7 +82,7 @@ nav .menu li a:hover{
 .movieheading h1{
     font-weight: 400;
     margin-top: 100px;
-    background:linear-gradient(rgb(171, 171, 171),rgb(119, 119, 119));
+    background:linear-gradient(rgb(216, 241, 242),rgb(237, 225, 225));
     border:none;
     font-size: 1.7rem;
     letter-spacing: 1px;
@@ -108,7 +112,8 @@ nav .menu li a:hover{
     margin: 20px;
     border-radius: 5px;
     overflow: hidden;
-    border-top: 3px solid #292929;
+    background:linear-gradient(rgb(202, 233, 253) ,rgb(245, 208, 208));
+    border-radius: 20px;
 }
 .movie-img img{
     width: 100%;
@@ -145,6 +150,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     border-top: 1px solid rgba(0,0,0,0.01);
+    background:linear-gradient(rgb(233, 217, 232),rgb(236, 244, 247))
 }
 footer p{
     color: #5e535e;
@@ -156,6 +162,10 @@ nav .menu-btn{
     font-size: 20px;
     cursor: pointer;
     display: none;
+}
+.movie-link{
+
+    border-radius: 2px;
 }
 @media(max-width:900px){
     nav{
