@@ -1,0 +1,198 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgb(193, 192, 192);
+}
+*{
+    box-sizing: border-box;
+    
+
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.04);
+    background-color: aliceblue;
+    position: fixed;
+}
+.homelogo img{
+    height: 35px;
+}
+nav .menu{
+    display: flex;
+}
+nav .menu li a{
+    height: 40px;
+    line-height: 43px;
+    margin:0px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #585858;
+    letter-spacing: 1px;
+}
+.searchbar{
+    width: 250px;
+    height: 40px;
+    background-color: rgb(210, 211, 212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0px 20px;
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 700;
+
+}
+.searchbar input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    outline: none;
+    background-color: rgb(210, 211, 212)
+}
+.searchbar i{
+    color: #3a3a3a;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+nav .menu li a:hover{
+    background-color: #242424;
+    color: #ffffff;
+    box-shadow: 5px 10px 30px rgba(53,53,53,0.1);
+    transition: all ease .1s;
+    border-radius: 50px;
+}
+.movieheading h1{
+    font-weight: 400;
+    margin-top: 100px;
+    background:linear-gradient(rgb(171, 171, 171),rgb(119, 119, 119));
+    border:none;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 15px;
+    outline: none;
+    left: 50px;
+    margin-left: 50px;
+    
+}
+#click{
+    display: none;
+}
+
+.movieheading{
+    display: flex;
+    align-items: center;
+}
+.moviecard{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.02);
+    margin: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    border-top: 3px solid #292929;
+}
+.movie-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.moviecard a{
+    text-align: center;
+    display: block;
+    font-weight: 600;
+    display: -webkit-box;
+    max-width: 80%;
+    -webkit-line-clamp: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #3a3a3a;
+    margin: 20px;
+}
+.moviecard:hover{
+    transform: translateY(-10px);
+
+    transition: all ease 0.2s;
+    
+}
+#movielist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid rgba(0,0,0,0.01);
+}
+footer p{
+    color: #5e535e;
+    margin: 10px 0px;
+    font-size: 0.9rem;
+}
+nav .menu-btn{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:900px){
+    nav{
+        padding:10px
+        ;
+    }
+    nav .menu-btn{
+        display: block;
+        font-size: 25px;
+    }
+    nav .menu{
+        position: fixed;
+        display: block;
+        top:-100%;
+        height: 65vh;
+        background: #ffffff;
+        width: 100%;
+        text-align: center;
+        transition: all 0.3s ease;
+        
+}
+#click:checked ~ .menu-btn i::before{
+    content: "<ion-icon name="close-outline"></ion-icon>";
+}
+nav .menu li a{
+    margin: 40px 10px ;
+    text-align: center;
+    font-size:medium;
+    
+
+}
+#click:checked ~ ul{
+    top: 5%;
+}
+}
+.searchbtn{
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
