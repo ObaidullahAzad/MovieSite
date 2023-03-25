@@ -134,7 +134,7 @@ nav .menu li a:hover{
     margin: 20px;
 }
 .moviecard:hover{
-    transform: translateY(-10px);
+    padding-bottom: 15px;
 
     transition: all ease 0.2s;
     
@@ -146,22 +146,81 @@ nav .menu li a:hover{
     flex-wrap: wrap; 
 }
 footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+
     border-top: 1px solid rgba(0,0,0,0.01);
-    background:linear-gradient(rgb(233, 217, 232),rgb(236, 244, 247))
-}
-footer p{
-    color: #5e535e;
-    margin: 10px 0px;
-    font-size: 0.9rem;
+    background:linear-gradient(to right, #aebaff,#ffbda7);
+    padding: 50px;
 }
 nav .menu-btn{
     color: rgb(0, 0, 0);
     font-size: 20px;
     cursor: pointer;
     display: none;
+}
+.container{
+    max-width: 1170px;
+    margin: auto;
+
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #140202;
+    margin-bottom: 35px;
+    font-weight:900;
+    position: relative;
+
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: #f23d01;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul{
+    list-style: none;
+
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-decoration: none;
+    color: #060404;
+    display: block;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+    font-weight: 500;
+}
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 6px;
+}
+.footer-col .social-link a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background: rgba(255,255,255,.2);
+    margin: 0 10px 10 0px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #120d0d;
+    transition: all 0.5s ease;
+}
+.footer-col .social-link a:hover{
+    color: #f0f0f2;
+    background: #0c0c0c;
+
 }
 .movie-link{
 
@@ -187,7 +246,7 @@ nav .menu-btn{
         transition: all 0.3s ease;
         
 }
-#click:checked ~ .menu-btn i::before{
+#click:checked ~ .menu-btn:before{
     content: "<ion-icon name="close-outline"></ion-icon>";
 }
 nav .menu li a{
@@ -205,4 +264,15 @@ nav .menu li a{
     cursor: pointer;
     background: transparent;
     border: none;
+}
+@media(max-width:738px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:567px){
+    .footer-col{
+        width: 100%;
+    }
 }
