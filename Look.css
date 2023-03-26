@@ -246,15 +246,14 @@ nav .menu-btn{
         transition: all 0.3s ease;
         
 }
-#click:checked ~ .menu-btn:before{
-    content: "<ion-icon name="close-outline"></ion-icon>";
+#click:checked ~ .menu-btn i:before{
+    content: "\f00d";
+    transition: all 0.3 ease;
 }
 nav .menu li a{
     margin: 40px 10px ;
     text-align: center;
     font-size:medium;
-    
-
 }
 #click:checked ~ ul{
     top: 5%;
@@ -275,4 +274,7 @@ nav .menu li a{
     .footer-col{
         width: 100%;
     }
+}
+.menu-btn{
+    transition: all .5 ease-out;
 }
