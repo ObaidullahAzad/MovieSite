@@ -278,3 +278,14 @@ nav .menu li a{
 .menu-btn{
     transition: all .5 ease-out;
 }
+@media(max-width:567px){
+    .movieheading{
+        margin-left: 70px;
+    }
+}
+@media(max-width:376px){
+    .movieheading{
+        margin-left: 40px;
+    }
+}
+
