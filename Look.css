@@ -61,7 +61,8 @@ nav .menu li a{
     height: 30px;
     border: none;
     outline: none;
-    background-color: rgb(247, 226, 246)
+    background-color: rgb(247, 226, 246);
+    color: brown;
 }
 .searchbar i{
     color: #3a3a3a;

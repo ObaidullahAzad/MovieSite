@@ -17,12 +17,12 @@
             <img src="Images/Homelogo.jpg" alt="Homelogo">
             </a>
         </div>
-        <div class="searchbar">
-            <input type="text" placeholder="Find Movie"/>
+        <form class="searchbar">
+            <input type="text" id="search-item" placeholder="Find Movie" onkeyup="search()"/>
             <button class="searchbtn">
             <ion-icon name="search-outline"></ion-icon>
         </button>
-        </div>
+        </form>
         <input type="checkbox" id="click">
         <label for="click" class="menu-btn">
             <i class="fa-solid fa-bars"></i>
@@ -39,7 +39,7 @@
     <div class="movieheading">
         <h1>Movies</h1>
     </div>
-    <section id="movielist">
+    <section class="movielist" id="movielist">
         <div class="moviecard">
             <div class="movie-img">
                 <img src="Images/Movie posters/Fantastic Beast.jpg">
