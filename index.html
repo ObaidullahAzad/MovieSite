@@ -6,19 +6,18 @@
     <script src="https://kit.fontawesome.com/4e1bd1db1f.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PiracyNet</title>
-    <script src="Funtion.js"></script>
-    <link rel="stylesheet" href="Look.css"/>
-    <link rel="shortcut icon" href="Images/Fav icon.jpg">
+    <link rel="stylesheet" href="/Look.css"/>
+    <link rel="shortcut icon" href="Images/shortcut.jpg">
 </head>
 <body>
-    <nav>
+        <nav>
         <div class="logoicon">
         <a href="#" class="homelogo">
-            <img src="Images/Homelogo.jpg" alt="Homelogo">
+            <img src="/images/kawaii-cat-bubble-tea-me.jpg" alt="Homelogo">
             </a>
         </div>
-        <form class="searchbar">
-            <input type="text" id="search-item" placeholder="Find Movie" onkeyup="search()"/>
+        <form id="form" class="searchbar">
+            <input type="text" class="search-item" id="search-item" placeholder="Find Movie" onkeyup="search()"/>
             <button class="searchbtn">
             <ion-icon name="search-outline"></ion-icon>
         </button>
@@ -34,253 +33,40 @@
             <li><a href="#">Upcoming</a></li>
             <li><a href="#">Categories</a></li>
         </ul>
-
     </nav>
-    <div class="movieheading">
-        <h1>Movies</h1>
-    </div>
-    <section class="movielist" id="movielist">
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Fantastic Beast.jpg">
-                <div class="movie-link">
-                <a href="#">
-                   Fantastic Beasts: The Secrets of Dumbledore (2022)
-                </a>
-                </div>
+    <main id="main">
+        <div class="movie">
+            <img src="/images/A silent voice.jpg" alt="">
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <span class="green">9.8</span>
+            </div>
+            <div class="overview">
+                <h3>Overview</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum nobis cumque architecto porro accusantium minima obcaecati ex perferendis odit, ratione atque, dicta quasi corporis, vel delectus odio at vitae?
             </div>
         </div>
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Antman And the Wasp.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    Ant-Man and the Wasp:Quantumania (2023)  
-                 </a>
-                </div>
+        <div class="movie">
+            <img src="/images/A silent voice.jpg" alt="">
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <span class="green">9.8</span>
             </div>
-        </div>       
-         <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Doctor Strange.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    Doctor Strange in the Multiverse of Madness (2022)
-                </a>
-                </div>
-            </div>
-        </div>        
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Adams Project.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    The Adam Project (2022)
-                </a>
-                </div>
-            </div>
-        </div>        
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Luca.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    Luca (2021)
-                </a>
-                </div>
-            </div>
-        </div>        
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Book Theif.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    The Book Theif (2013)
-                </a>
-                </div>
-            </div>
-        </div>        
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Elementals.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    Elemental (2023)
-                </a>
-                </div>
-            </div>
-        </div>             
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/A silent voice.jpg">
-                <div class="movie-link">
-                <a href="#">
-                   A Silent Voice (2016)
-                </a>
-                </div>
-            </div>
-        </div>        
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Michelle.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    The Mitchells vs. the Machines (2021)
-                </a>
-                </div>
-            </div>
-        </div>        
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Minions.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    Minions: The Rise of Gru (2022)
-                </a>
-                </div>
-            </div>
-        </div>        
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Riya Dragon 2.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    Raya and The Last Dragon (2021)
-                </a>
-                </div>
-            </div>
-        </div>        
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Wreck it Ralph.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    Ralph Breaks the Internet (2018)
-                </a>
-                </div>
-            </div>
-        </div>        
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Spiderverse.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    Spider-Man:Across the Spider-verse (2023)
-                </a>
-                </div>
+            <div class="overview">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum nobis cumque architecto porro accusantium minima obcaecati ex perferendis odit, ratione atque, dicta quasi corporis, vel delectus odio at vitae?
             </div>
         </div>
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Black Adams.jpeg">
-                <div class="movie-link">
-                <a href="#">
-                   Black Adam (2022)
-                </a>
-                </div>
+        <div class="movie">
+            <img src="/images/A silent voice.jpg" alt="">
+            <div class="movie-info">
+                <h3>Movie Title</h3>
+                <span class="green">9.8</span>
             </div>
-        </div> 
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Hotel Transelvania.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    Hotel Transylvania: Transformania (2022)
-                </a>
-                </div>
-            </div>
-        </div> 
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Guardian of the Galaxy.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    Guardians of the Galaxy Vol. 3 (2023)
-                </a>
-                </div>
+            <div class="overview">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae earum nobis cumque architecto porro accusantium minima obcaecati ex perferendis odit, ratione atque, dicta quasi corporis, vel delectus odio at vitae?
             </div>
         </div>
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Violet Evergarden.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    Violet Evergarden: The Movie (2020)
-                </a>
-                </div>
-            </div>
-        </div>
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Puss in Boots.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    Puss in Boots: The Last Wish (2022)
-                </a>
-                </div>
-            </div>
-        </div>
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Ice Age.jpg_large">
-                <div class="movie-link">
-                <a href="#">
-                    The Ice Age Adventures of Buck Wild(2022)
-                </a>
-                </div>
-            </div>
-        </div>
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Shazam.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    Shazam! Fury of the Gods (2023)
-                </a>
-                </div>
-            </div>
-        </div>
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Free guys.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    Free Guy (2021)
-                </a>
-                </div>
-            </div>
-        </div> 
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Dark Phoenix.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    Dark Phoenix (2019)
-                </a>
-                </div>
-            </div>
-        </div> 
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Blade Runner.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    Blade Runner 2049 (2017)
-                </a>
-                </div>
-            </div>
-        </div> 
-        <div class="moviecard">
-            <div class="movie-img">
-                <img src="Images/Movie posters/Valerian.jpg">
-                <div class="movie-link">
-                <a href="#">
-                    Valerian and the City of a Thousand Planets (2017)
-                </a>
-                </div>
-            </div>
-        </div>           
-    </section>
+    </main>
     <footer>
         <div class="container">
             <div class="row">
@@ -328,7 +114,9 @@
             </div>
         </div>
     </footer>
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/Funtion.js"></script>
 </body>
 </html>
